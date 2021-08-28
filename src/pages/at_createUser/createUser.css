@@ -1,0 +1,30 @@
+#createUserWrapper {
+    position: absolute;
+    top: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 2;   
+}
+#createUserClose {
+    position: absolute;
+    top: 4vh;
+    right: 14vw;
+    padding: 5px
+}
+#overlay {
+    background-color: whitesmoke;
+    width: 70vw;
+    padding: 10vw;
+}
+.user-input {
+    width: 60vw;
+    padding: 15px;
+}
+#btn-wrapper button{
+    padding: 10px;
+}
+.css-2b097c-container {
+    width: 64vw;
+    margin: 0 auto;
+}

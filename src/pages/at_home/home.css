@@ -1,0 +1,256 @@
+#homeWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#homeHeader {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2vw;
+}
+#createUserBtn {
+    padding: 10px;
+}
+#userDelete {
+    position: absolute;
+    top: 8%;
+    right: 4%
+}
+#searchHome {
+    width: 40vw
+}
+#pagination {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 50px 0 50px 0;
+}
+#pagination button {
+    padding: 10px;
+}
+/* -----------------------------
+          Media Queries 
+------------------------------*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    #homeWrapper {
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+    .cardWrapper {
+        width: 96%;
+        display: grid;
+        grid-template-columns: 25% 80%;
+        align-items: center;
+        box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -webkit-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -moz-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .cardWrapper img {
+        border-radius: 5vw;
+        margin: 20px auto 0 auto;
+        width: 8vw;
+    }
+    .cardContent {
+        text-align: left;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 1.6vw;
+        padding: 1vw;
+    }
+    .cardContent p span {
+        font-weight: 500;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1280px) {
+    #homeWrapper {
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+    .cardWrapper {
+        width: 96%;
+        display: grid;
+        grid-template-columns: 25% 80%;
+        align-items: center;
+        box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -webkit-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -moz-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .cardWrapper img {
+        border-radius: 60px;
+        margin: 20px auto 0 auto;
+        width: 80px;
+    }
+    .cardContent {
+        text-align: left;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 1.6vw;
+        padding: 1vw;
+    }
+    .cardContent p span {
+        font-weight: 500;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #homeWrapper {
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+    .cardWrapper {
+        width: 96%;
+        display: grid;
+        grid-template-columns: 25% 80%;
+        align-items: center;
+        box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -webkit-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -moz-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .cardWrapper img {
+        border-radius: 60px;
+        margin: 20px auto 0 auto;
+        width: 80px;
+    }
+    .cardContent {
+        text-align: left;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 1.6vw;
+        padding: 1vw;
+    }
+    .cardContent p span {
+        font-weight: 500;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+       
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    #homeHeader {
+        align-items: center;
+    }
+    #homeHeader input {
+        border-radius: 20px;
+        border: 1px solid black;
+        padding: 4px 4px 4px 8px;
+    }
+    #homeWrapper {
+        display: grid;
+        grid-template-columns: 45% 45%;
+    }
+    .cardWrapper {
+        width: 90%;
+        display: grid;
+        grid-template-rows: 25% 75%;
+        align-items: center;
+        box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -webkit-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        -moz-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .cardWrapper img {
+        border-radius: 60px;
+        margin: 20px auto 0 auto;
+        width: 60px;
+    }
+    .cardContent {
+        text-align: left;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 1.6vw;
+        padding: 2vw;
+    }
+    .cardContent p span {
+        font-weight: 500;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 180px) and (max-width: 480px) {
+      #homeHeader {
+          align-items: center;
+      }
+      #homeHeader input {
+          border-radius: 20px;
+          border: 1px solid black;
+          padding: 4px 4px 4px 8px;
+      }
+      .cardWrapper {
+          width: 90%;
+          display: grid;
+          grid-template-columns: 20% 75%;
+          align-items: center;
+          box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+          -webkit-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+          -moz-box-shadow: 5px 6px 15px -3px rgba(0,0,0,0.68);
+          border-radius: 20px;
+          margin-bottom: 20px;
+          position: relative;
+      }
+      #searchHome {
+          width: 30vw
+      }
+      #createUserBtn {
+          padding: 5px;
+      }
+      .cardWrapper img {
+          border-radius: 60px;
+          margin: 0 auto;
+          width: 40px;
+      }
+      .cardContent {
+          text-align: left;
+          font-family: Poppins;
+          font-weight: 300;
+          font-size: 3vw;
+      }
+      .cardContent p span {
+          font-weight: 500;
+      }
+  }
